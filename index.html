@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AMK-valintakoeharjoittelu</title>
+<meta name="description" content="Harjoitteluohjelmat ammattikorkeakoulujen valintakokeeseen: matematiikkatreeni ja valintakoetreeni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f2f5f6; --surface:#ffffff; --ink:#13262f; --muted:#56676f; --line:#cfd9dd; --accent:#1d5d8a; --accent-ink:#ffffff; --mark:#c98a06;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif; --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#0e161a; --surface:#152127; --ink:#e2eaed; --muted:#93a5ad; --line:#283a42; --accent:#6eb0df; --accent-ink:#0b1a24; --mark:#f0c050; color-scheme:dark}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--f-body);-webkit-text-size-adjust:100%}
+.wrap{max-width:820px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 56px;display:grid;gap:24px}
+h1,h2{font-family:var(--f-display);margin:0;line-height:1.2;text-wrap:balance}
+h1{font-size:1.7rem;font-weight:800}
+h2{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{display:grid;gap:10px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--accent)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card ul{margin:0;padding-left:1.1em;display:grid;gap:4px;color:var(--muted);font-size:.95rem}
+.go{justify-self:start;display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:6px;background:var(--accent);color:var(--accent-ink);font-weight:600}
+.note{border-left:3px solid var(--mark);padding:10px 14px;background:var(--surface);border-radius:0 8px 8px 0;font-size:.95rem;display:grid;gap:6px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header style="display:grid;gap:8px">
+    <h1>AMK-valintakoeharjoittelu</h1>
+    <p class="muted">Harjoitteluohjelmat ammattikorkeakoulujen yhteiseen valintakokeeseen. Toimivat selaimessa puhelimella, tabletilla ja tietokoneella.</p>
+  </header>
+  <div class="cards">
+    <a class="card" href="matematiikkatreeni/">
+      <h2>Matematiikkatreeni</h2>
+      <p>Valintakokeen matematiikka perusteista koetasolle.</p>
+      <ul><li>18 aihetta järjestyksessä, teoria ja esimerkit</li><li>Loputtomasti tehtäviä, vihjeet ja välivaiheet</li><li>Koetyyliset setit ajastimella ja funktiolaskimella</li></ul>
+      <span class="go">Avaa matematiikkatreeni</span>
+    </a>
+    <a class="card" href="valintakoetreeni/">
+      <h2>Valintakoetreeni</h2>
+      <p>Koko valintakokeen osiot ja viikko-ohjelma koepäivään.</p>
+      <ul><li>Päätöksenteko, opetuskieli, englanti ja matematiikka</li><li>Viikko-ohjelma koulutusalan mukaan</li><li>Koetila ajastimella ja tulosseuranta</li></ul>
+      <span class="go">Avaa valintakoetreeni</span>
+    </a>
+  </div>
+  <div class="note">
+    <p><strong>Tulokset tallentuvat vain omaan selaimeesi.</strong> Käytä aina samaa selainta, esimerkiksi Safaria tai Chromea. Jos linkki aukeaa WhatsAppin tai Messengerin sisällä, valitse Avaa selaimessa.</p>
+    <p class="muted">Kotinäytölle: iPhonessa Jaa → Lisää Koti-valikkoon, Androidissa ⋮ → Lisää aloitusnäytölle.</p>
+  </div>
+  <p class="muted" style="font-size:.85rem">Harjoitustehtävät ovat omia harjoitustehtäviä, eivät virallisia koetehtäviä. Kokeen viralliset tiedot ja esimerkkitehtävät: <a href="https://www.ammattikorkeakouluun.fi/esimerkkitehtavat/" style="color:var(--accent)">ammattikorkeakouluun.fi</a>.</p>
+</main>
+</body>
+</html>
